@@ -17,6 +17,11 @@ nav{
     height: 0;
 }
 
+/* #img1{
+    width: 25%;
+    height: auto;
+} */
+
 .navDown{
     display: flex;
     flex-direction: row;
