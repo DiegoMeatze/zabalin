@@ -7,7 +7,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* width: 97.5vw; */
     margin: 0;
-    
+    background-color: rgb(226, 224, 224);
     
 }
 
@@ -49,7 +49,7 @@ nav{
 .banner {
     width: 100%;
     height: 300px;
-    background-image: url(./Images/otono.png);
+    background-image: url(./Images/limp2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -198,7 +198,7 @@ img {
 
     /* tamaño grande de pantalla */
     .banner {
-        background-image: url(./Images/otono2.png);
+        background-image: url(./Images/limp3.jpg);
     }
 
     #desplegable {
