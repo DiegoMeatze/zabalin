@@ -1,0 +1,151 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 97.5vw;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #B8B8B8 50%, #FFFFFF 100%);
+    background: -webkit-linear-gradient(top, #838383 0%, #B8B8B8 50%, #FFFFFF 100%);
+    background: linear-gradient(to bottom, #838383 0%, #B8B8B8 50%, #FFFFFF 100%);
+}
+
+.banner {
+    width: 100%;
+    height: 300px;
+    background-image: url(./Images/ZabalimpTextPhoto.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu {
+    background-color: black;
+    color: lightgrey;
+    position: relative;
+    min-height: 50px;
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    flex-direction: column;
+}
+
+.menu a {
+    margin: 5px 0;
+    text-decoration: none;
+    color: lightgray;
+}
+
+#desplegable {
+    display: none;
+    justify-self: flex-end;
+    /* display: flex; */
+    flex-direction: column;
+    transition: all 0.5s;
+}
+
+#btnHam {
+    position: absolute;
+    right: 1%;
+    top: 10px;
+}
+
+#hamburguer {
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: column;
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    /* margin-top: 20px; */
+    background: transparent;
+    gap: .65rem;
+}
+
+#hamburguer div {
+    background: white;
+    height: 2px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all .5s;
+    transform-origin: left;
+}
+
+.equis div:first-child {
+    transform: rotate(45deg);
+}
+
+.equis div:nth-child(2) {
+    opacity: 0;
+}
+
+.equis div:last-child {
+    transform: rotate(-45deg);
+}
+
+.section {
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    display: none;
+}
+
+
+@media screen and (min-width: 420px) {
+    /* tamaño mediano de pantalla */
+
+    .section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        /* background-color: cadetblue; */
+    }
+
+    .carousel {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .carousel img {
+        width: 32%;
+    }
+}
+
+@media screen and (min-width: 720px) {
+
+    /* tamaño grande de pantalla */
+    .banner {
+        background-image: url();
+    }
+
+
+    #desplegable {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    #desplegable a {
+        margin: 10px;
+    }
+
+    .menu {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    #hamburguer {
+        display: none;
+    }
+}
